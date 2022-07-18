@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/secwhite"
+    tools:context=".fragments.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/tv_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Day"
+        android:textSize="36sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Time"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="45dp"
+        android:layout_below="@+id/tv_day"
+        android:layout_marginStart="45dp" />
+
+    <TextView
+        android:id="@+id/tv_desc_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alarm for doing workout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        />
+
+    <TextView
+        android:id="@+id/alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alarm"
+        android:layout_alignEnd="@+id/tv_desc_alarm"
+        android:layout_below="@+id/tv_desc_alarm"
+        android:layout_alignRight="@+id/tv_desc_alarm" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="65dp"
+        android:layout_height="30dp"
+        android:text="cancel"
+        android:textSize="10sp"
+        android:layout_alignEnd="@+id/alarm"
+        android:layout_alignRight="@+id/alarm"
+        android:layout_below="@+id/alarm"/>
+
+    <Button
+        android:id="@+id/btn_set"
+        android:layout_width="65dp"
+        android:layout_height="30dp"
+        android:text="set"
+        android:textSize="10sp"
+        android:layout_toLeftOf="@+id/btn_cancel"
+        android:layout_toStartOf="@+id/btn_cancel"
+        android:layout_below="@+id/alarm"/>
+
+
+
+    <ListView
+        android:id="@+id/lv_desc"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@drawable/lv_bg"
+        android:layout_below="@+id/tv_time"
+        android:layout_alignParentBottom="true"
+        />
+
+
+</RelativeLayout>

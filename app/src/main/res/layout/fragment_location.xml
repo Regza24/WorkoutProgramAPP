@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.LocationFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location of workout places"
+        android:textSize="20sp"
+        android:textColor="@color/blue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+
+    <ImageView
+        android:id="@+id/loc1"
+        android:layout_width="200dp"
+        android:layout_height="130dp"
+        android:src="@drawable/tempat1"
+        android:background="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        />
+
+    <Button
+        android:id="@+id/btn_loc1"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:text="Find Location"
+        android:textColor="@color/secwhite"
+        android:layout_below="@+id/loc1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_button"
+        />
+
+    <ImageView
+        android:id="@+id/loc2"
+        android:layout_width="200dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/btn_loc1"
+        android:src="@drawable/tempat2"
+        />
+
+    <Button
+        android:id="@+id/btn_loc2"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:text="Find Location"
+        android:textColor="@color/secwhite"
+        android:layout_below="@+id/loc2"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_button"
+        />
+
+</RelativeLayout>
